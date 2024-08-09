@@ -12,7 +12,7 @@
 title: Najaa Technologies Blog
 email: hello@najaa.org
 description: >- # this means to ignore newlines until "baseurl:"
-    Blog about technology, software development and education.
+    Blog about Technology, Software Development and Education.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.najaa.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: najaatech
