@@ -4,15 +4,35 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Blog about Technology, Software Development and Education.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+# [Najaa Technologies](https://github.com/najaatech)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Technology Solutions startup based in Kuwait established in 2021.
 
+## Mission
 
-[jekyll-organization]: https://github.com/jekyll
+To provide functional Technology Solutions to individuals and SMEs in the Middle East.
+
+## Core Values
+
+-   Empathetic
+-   Humble
+-   Transparent
+-   Adaptable
+
+## Areas of expertise
+
+-   Web Development (Backend / Frontend)
+-   Software development
+    -   Scripting
+    -   Desktop Apps
+    -   Extensions
+-   App development
+-   Automation
+-   IoTs & Robotics
+-   IT integration
+-   AI
+-   General IT support
+
+> This blog is built with [jekyll](https://github.com/jekyll/jekyll) and hosted on [GitHub pages](https://docs.github.com/en/pages).

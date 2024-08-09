@@ -1,9 +1,13 @@
 # bundle install
 # bundle exec jekyll serve
+# https://pages.github.com/versions/
 
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
+
+# aws s3 cp --recursive s3://myBucket/dir localdir
+# aws s3 sync s3://mybucket/dir localdir
 
 title: Najaa Technologies Blog
 email: hello@najaa.org
