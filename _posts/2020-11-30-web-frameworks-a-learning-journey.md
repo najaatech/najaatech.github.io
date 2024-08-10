@@ -3,9 +3,10 @@ layout: post
 title: "Web Frameworks - A Learning Journey"
 date: 2020-11-30 20:20:00 +0300
 categories: technology development
+author: Anas Najaa
 ---
 
-![Web Frameworks - A Learning Journey](https://najaa-files.s3.me-south-1.amazonaws.com/blog/2024/08/c1f071d7-88f2-4a2e-912d-6ac82233847c.png)
+![Web Frameworks - A Learning Journey](https://najaa-files.s3.me-south-1.amazonaws.com/blog/2024/08/c1f071d7-88f2-4a2e-912d-6ac82233847b.png)
 
 If you are new to programming and interested in web development, you'll most likely stumble upon the term framework. As you start delving into the frontend or backend development paths, you'll be tempted to try out one or more of those web frameworks that promise to simplify your development flow and increase your productivity. As tempting as it might be, you should probably skip them in the beginning. In this post, I'll discuss when should you start considering using frameworks and what to keep in mind when picking one.
 

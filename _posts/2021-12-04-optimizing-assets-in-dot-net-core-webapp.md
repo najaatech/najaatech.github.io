@@ -3,9 +3,10 @@ layout: post
 title: "Optimizing assets in .NET Core WebApp"
 date: 2020-12-04 20:00:00 +0300
 categories: technology development dotnet core
+author: Anas Najaa
 ---
 
-![Optimizing assets in .NET Core WebApp](https://najaa-files.s3.me-south-1.amazonaws.com/blog/2024/08/916265dc-958d-4671-a433-11e55a5ad374.png)
+![Optimizing assets in .NET Core WebApp](https://najaa-files.s3.me-south-1.amazonaws.com/blog/2024/08/916265dc-958d-4671-a433-11e55a5ad377.png)
 
 When serving website's static assets, it is alway recommended to reduce the number and the size of requests made on each page. In .NET Core, there are two useful libraries that work very well in Web App projects. In this article, we are going to describe how to use Build Minifier to reduce the number and size of our static assets. In addition, we will use Web Compiler to streamline the process of writing and minifying our CSS files using SCSS.
 
@@ -33,11 +34,11 @@ First, let's create a file under the name "style.scss" in the path wwwroot\css. 
 
 **wwwroot\css\res\style.scss**
 
-```
+```scss
 $bg-color: #f5f5f5;
 
 body {
-  background: $bg-color;
+	background: $bg-color;
 }
 ```
 
@@ -45,12 +46,12 @@ Now if we try to build the solution, it will build successfully but no .css or .
 
 **compilerconfig.json**
 
-```
+```json
 [
-  {
-    "outputFile": "wwwroot/css/style.css",
-    "inputFile": "wwwroot/css/style.scss"
-  }
+	{
+		"outputFile": "wwwroot/css/style.css",
+		"inputFile": "wwwroot/css/style.scss"
+	}
 ]
 ```
 
@@ -62,32 +63,32 @@ Next, let us include some JS files into our project. These files can contain any
 
 **wwwroot\js\lib1.js**
 
-```
-function addTwoNumbers(num1, num2){
+```javascript
+function addTwoNumbers(num1, num2) {
 	return num1 + num2;
 }
 ```
 
 **wwwroot\js\lib2.js**
 
-```
-function postRequest(url, data){
-    const headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    const raw = JSON.stringify(data);
-    const options = {
-        method: "POST",
-        headers: headers,
-        body: raw,
-        credentials: "include",
-    };
-    return fetch(url, options).catch(error => console.log(error));
+```javascript
+function postRequest(url, data) {
+	const headers = new Headers();
+	headers.append("Content-Type", "application/json");
+	const raw = JSON.stringify(data);
+	const options = {
+		method: "POST",
+		headers: headers,
+		body: raw,
+		credentials: "include",
+	};
+	return fetch(url, options).catch((error) => console.log(error));
 }
 ```
 
 **wwwroot\css\lib1.css**
 
-```
+```css
 .test {
 	color: red;
 	margin-left: 1.2rem;
@@ -102,16 +103,16 @@ function postRequest(url, data){
 
 **wwwroot\css\lib2.css**
 
-```
+```css
 .test3 {
 	color: gray;
-    margin-top: 0;
-    margin-bottom: 16px;
+	margin-top: 0;
+	margin-bottom: 16px;
 }
 .test4 {
-    font-size: 50px;
-    line-height: 1.5;
-    color: orange;
+	font-size: 50px;
+	line-height: 1.5;
+	color: orange;
 }
 ```
 
@@ -119,27 +120,21 @@ Afterwards, we need to create a configuration file that will tell the minifier t
 
 **bundleconfig.json**
 
-```
+```json
 [
-  {
-    "outputFileName": "wwwroot/css/lib.min.css",
-    "inputFiles": [
-      "wwwroot/css/lib1.css",
-      "wwwroot/css/lib2.css",
-    ]
-  },
-  {
-    "outputFileName": "wwwroot/js/lib.min.js",
-    "inputFiles": [
-      "wwwroot/js/lib1.js",
-      "wwwroot/js/lib2.js"
-    ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": false
-    },
-    "sourceMap": false
-  }
+	{
+		"outputFileName": "wwwroot/css/lib.min.css",
+		"inputFiles": ["wwwroot/css/lib1.css", "wwwroot/css/lib2.css"]
+	},
+	{
+		"outputFileName": "wwwroot/js/lib.min.js",
+		"inputFiles": ["wwwroot/js/lib1.js", "wwwroot/js/lib2.js"],
+		"minify": {
+			"enabled": true,
+			"renameLocals": false
+		},
+		"sourceMap": false
+	}
 ]
 ```
 
