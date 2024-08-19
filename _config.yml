@@ -23,7 +23,7 @@ twitter_username: najaatech
 github_username: najaatech
 google_analytics: G-QVY6K7Q08L
 show_excerpts: true
-cdn_url: https://najaa-files.s3.me-south-1.amazonaws.com
+cdn_url: https://d2ch52pto83ayv.cloudfront.net
 
 # Build settings
 theme: minima
