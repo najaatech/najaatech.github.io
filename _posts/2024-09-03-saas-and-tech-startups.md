@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "SaaS and tech startups"
-date: 2024-02-09 20:00:00 +0300
+date: 2024-09-03 20:00:00 +0300
 categories: saas saap software development tech industry
 author: Anas Najaa
 ---
 
-![Choosing Node.js Web Framework]({{site.cdn_url}}/blog/2024/08/0adf9d7c-8416-4742-a57e-c3b1c038689e.png)
+![saas tech startup]({{site.cdn_url}}/blog/2024/09/bbe7e1f8-e3d7-4969-942d-3cbf83a07206.jpeg)
 
 # Intro
 
@@ -110,18 +110,17 @@ So based on the advantages and disadvantages, we can say that a viable SaaS need
 When it comes to SaaS, there are many considerations to keep in mind for service providers and customers. As provider, the future possibilities and ROI of SaaS are very tempting reasons to build a SaaS solution. However, these benefits do not come without a cost. It is important to remember that as a business owner who is looking to venture into the SaaS world, doing enough market research and testing your ideas go hand in hand with your SaaS success. Choosing the right technology to enable your SaaS to scale also plays an important role when it comes to maintaining your user-base and providing a satisfactory service for all your users.
 
 ## References
-- https://www.bynder.com/en/blog/software-as-a-product-vs-software-as-a-service/
-- https://www.embroker.com/blog/software-business-models/
-- https://www.gartner.com/en/supply-chain/insights/power-of-the-profession-blog/product-as-a-service-business-models-require-supply-chain-commercial-innovation
-- https://www.rib-software.com/en/blogs/saas-trends
-- https://subscribed.fyi/blog/is-microsoft-365-a-saas-or-paas-unraveling-software-classification/
-- https://www.youtube.com/watch?v=HmnyZgbIOyk
-- https://neilpatel.com/blog/saas-is-not-a-product/
-- https://sixteenventures.com/saas-churn-rate
-- https://support.microsoft.com/en-us/office/where-to-enter-your-office-product-key-0a82e5ae-739e-4b92-a6f4-2ec780c185db
-- https://www.inkandswitch.com/local-first/
-- https://news.ycombinator.com/item?id=32856779
-- https://aws.amazon.com/what-is-cloud-computing/
-- https://hbr.org/2010/07/stop-trying-to-delight-your-customers
-- https://sixteenventures.com/storytelling-in-customer-success
-- https://www.youtube.com/watch?v=OzqAWU1NgAo
+- [Software as a product vs Software as a Service](https://www.bynder.com/en/blog/software-as-a-product-vs-software-as-a-service/)
+- [Software Business Models](https://www.embroker.com/blog/software-business-models/)
+- [product as a service business models](https://www.gartner.com/en/supply-chain/insights/power-of-the-profession-blog/product-as-a-service-business-models-require-supply-chain-commercial-innovation)
+- [saas trends](https://www.rib-software.com/en/blogs/saas-trends)
+- [is microsoft 365 a saas or paas](https://subscribed.fyi/blog/is-microsoft-365-a-saas-or-paas-unraveling-software-classification/)
+- [saas is not a product](https://neilpatel.com/blog/saas-is-not-a-product/)
+- [Why SaaS Ideas Don't Matter](https://www.youtube.com/watch?v=HmnyZgbIOyk)
+- [saas churn rate](https://sixteenventures.com/saas-churn-rate)
+- [local first development](https://www.inkandswitch.com/local-first/)
+- [what is cloud computing](https://aws.amazon.com/what-is-cloud-computing/)
+- [Why is everything a SaaS product?](https://news.ycombinator.com/item?id=32856779)
+- [stop trying to delight your customers](https://hbr.org/2010/07/stop-trying-to-delight-your-customers)
+- [storytelling in customer success](https://sixteenventures.com/storytelling-in-customer-success)
+- [The best business to start as a developer in 2024](https://www.youtube.com/watch?v=OzqAWU1NgAo)
