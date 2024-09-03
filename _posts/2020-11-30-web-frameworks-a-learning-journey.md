@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Web Frameworks - A Learning Journey"
-date: 2020-11-30 20:20:00 +0300
 categories: technology development
 author: Anas Najaa
 ---

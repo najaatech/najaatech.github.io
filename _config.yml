@@ -14,7 +14,9 @@
 # https://github.com/jekyll/minima
 
 title: Najaa Technologies Blog
-email: hello@najaa.org
+author:
+    name: Hello Najaa
+    email: hello@najaa.org
 description: >- # this means to ignore newlines until "baseurl:"
     Blog about Technology, Software Development and Education.
 baseurl: "" # the subpath of your site, e.g. /blog

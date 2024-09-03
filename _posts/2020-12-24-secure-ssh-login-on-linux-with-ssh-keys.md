@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Secure SSH Login on Linux with SSH keys"
-date: 2020-12-24 20:00:00 +0300
 categories: technology development ssh
 author: Anas Najaa
 ---

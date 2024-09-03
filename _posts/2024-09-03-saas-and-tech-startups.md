@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "SaaS and tech startups"
-date: 2024-09-03 20:00:00 +0300
-categories: saas saap software development tech industry
+categories: software saas startup tech industry business
 author: Anas Najaa
 ---
 

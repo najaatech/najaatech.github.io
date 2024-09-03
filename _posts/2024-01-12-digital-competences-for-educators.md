@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Digital Competences for Educators"
-date: 2024-01-12 20:00:00 +0300
 categories: digital competence education technology research
 author: Anas Najaa
 ---
