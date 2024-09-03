@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Optimizing assets in .NET Core WebApp"
-date: 2020-12-04 20:00:00 +0300
+date: 2021-12-04 20:00:00 +0300
 categories: technology development dotnet core
 author: Anas Najaa
 ---
