@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Revisiting the age old question, cloud hosting vs on-premise in Kuwait"
+title: "Revisiting the age old question, cloud hosting vs on-premise in Kuwait in 2025"
 categories: cloud saas startup tech industry business hosting kuwait cost strategic
 author: Anas Najaa
 ---
