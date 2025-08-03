@@ -163,7 +163,7 @@ Even accounting for my time and extra security steps, the cloud remains roughly 
 ## So, will On-Prem ever Make Sense for startups?
 For a startup, I don't think so, at least not anytime soon. This research is hardly thorough, but for you as a founder please feel free to add as many factors as you see fit to enhance the formula and come up with your own valuation. 
 
-Don't forget that my choice of cloud, DigitalOcean, is considered one of the more expensive cloud providers out there. In the end,I rather spend my time building features instead of troubleshooting hardware.
+Don't forget that my choice of cloud, DigitalOcean, is considered one of the more expensive cloud providers out there. In the end, I rather spend my time building features instead of troubleshooting hardware.
 
 Plug in your own inputs—prices, hours, discount rate—and let the data guide your decision. Steven Johnson said it best in his [book](https://www.amazon.com/Farsighted-Make-Decisions-That-Matter/dp/1594488215):
 > “Great decisions are not made by people who see the future clearly.  
