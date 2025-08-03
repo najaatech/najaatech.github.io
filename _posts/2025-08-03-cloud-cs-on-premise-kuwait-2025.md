@@ -22,9 +22,7 @@ As usual, the only constant is change, and this idea will respawn again in my he
 I started by reminding myself of one of the most important financial concepts I studied back in my MBA, Time Value of money. [Kuwait’s inflation](https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=KW) is hovering around 2.3%. In simple terms, money spent next year will cost more in real terms than money spent today. 
 To capture both this inflation and local economic risks, I chose an 4% discount rate for my five-year forecast as set by [CBK](https://www.cbk.gov.kw/en/cbk-news/announcements-and-press-releases/press-releases/2024/09/202409181900-cbk-cuts-discount-rate-by-25-basis-points-to-400). From here on, every future expense would be viewed through that lens.
 
-# Gathering the Ingredients: Local Prices & Your Invoice
-
-## Local Prices, a simple server cost from a local supplier
+# On premise costs real Local Prices
 I've been a loyal customer for [PC Kuwait](https://pckuwait.com/) for the past 10 years. They are trust worthy and reliant. I checked their website and found the following server:
 - [Dell PowerEdge T150](https://pckuwait.com/product/dell-t150-poweredge-tower-server-xeon-e-2314-16gb-ram-2tb-hdd/) (Xeon E-2314, 16 GB RAM, 2 TB HDD): 350 KWD
 
@@ -36,8 +34,8 @@ And extra SSD storage:
 
 Total up-front capital expense: 642 KWD
 
-## Physical location for the server
-I used a portion of my monthly office rent for the server space, so let us say around 100 KWD/month to cover electricity, security, cooling, and room: 1,200 KWD per year.
+## What about the physical location for the server?
+I used a portion of my monthly office rent for the server space, so let us say around 100 KWD/month to cover electricity, physical security, cooling, and room: 1,200 KWD per year.
 
 ## Internet access to get the server online
 I've already subscribed to Internet & Static IP from Zain. The cost breakdown is as follows:
@@ -46,24 +44,14 @@ I've already subscribed to Internet & Static IP from Zain. The cost breakdown is
 
 Total monthly cost: (20 + 3) × 12 = 276 KWD per year
 
-## Cloud cost with DigitalOcean
-If you go to DigitalOcean and select a droplet (VPS), your bill will amount to 70 KWD/month. The specs are:
-- 16 GB RAM
-- 8 Intel-core CPUs
-- 1480 GB NVMe SSD
-
-Total cost per year: 840 KWD
-
-Note: You might argue that the server specs don't exactly match the one picked from the local supplier, but those specs are as close I can get. There will be inaccuracies here and there but in the grand scheme of things, they will not matter that much as you have to take into account that cloud host is handling cooling, power, redundancy, and security for me.
-
-## Other Security & Compliance considerations for local hosting
+## Other Security considerations for local hosting
 Running on-premises means I’m responsible for:
 - Physical security: locked cabinet, CCTV, access logs
 - Network security: firewalls, intrusion detection
 - Data protection: encrypted disks, off-site backups
 A rough estimate would be 150 KWD/year for tools and backup storage.
 
-## The hidden cost, My time valued at Opportunity Cost
+## The hidden cost of going local, my time valued at opportunity cost
 The local setup is not going to deploy itself magically after all. Someone needs to plan the setup, find a good and preferably free software to manage the server such as [Proxmox](https://www.proxmox.com/en/) and to help with deploying websites and services such as [Coolify](https://github.com/coollabsio/coolify).
 
 So modestly speaking, I’ll spend about 1–2 hours per day managing all of this show. Valuing my time at 10 KWD/hour and averaging 1.5 hours/day:
@@ -118,11 +106,21 @@ Year 5:
 
 **PV = 32,779.90**
 
+# Cloud cost with DigitalOcean
+If I go to DigitalOcean and select a droplet (VPS), with specs close to the PowerEdge server I picked from PC Kuwait, my bill will amount to 70 KWD/month. The specs are:
+- 16 GB RAM
+- 8 Intel-core CPUs
+- 1480 GB NVMe SSD
+
+Total cost per year: 840 KWD
+
+Note: You might argue that the server specs don't exactly match the one picked from the local supplier, but those specs are as close I can get. There will be inaccuracies here and there but in the grand scheme of things, they will not matter that much as you have to take into account that cloud host is handling cooling, power, redundancy, and security for me.
+
 ## Cloud Over Five Years
 
 With 1000 KWD per year (actually it is 840, I just pushed it to 1000 KWD to account for discrepancies in specs and to include my opportunity cost of managing the infrastructure and assuming a modest 5% annual price rise, all again discounted each year at 4%.
 
-## Present Value Calculation for Growing Cash Flows (4% Discount Rate, 5% Growth)
+### Present Value Calculation for Growing Cash Flows (4% Discount Rate, 5% Growth)
 
 #### Formula:
 
@@ -154,7 +152,7 @@ Year 5:
 **PV = 4,900.77**
 
 
-## Reality, what the Numbers Say
+# Reality, what the Numbers Say
 
 - On-Premises: ~32,700 KWD over five years (PV)
 - Cloud (DigitalOcean): ~5,000 KWD over five years (PV)
@@ -172,9 +170,9 @@ Plug in your own inputs—prices, hours, discount rate—and let the data guide 
 > people who embrace complexity, uncertainty, and long-term consequences.”  
 > — *Steven Johnson, Farsighted*
 
-#### Appendices 
+# Appendices 
 
-### On-Premises: Capital & Operational Expenses
+## On-Premises: Capital & Operational Expenses
 
 **Initial Capital Expenditure (CAPEX)**
 
@@ -197,7 +195,7 @@ Plug in your own inputs—prices, hours, discount rate—and let the data guide 
 | **Total Annual OPEX**        | **1,229.4**       |                                                 |
 
 
-### Cloud Hosting: Predictable, Managed Services
+## Cloud Hosting: Predictable, Managed Services
 
 | Category                      | Annual Cost (KWD) | Notes                                                          |
 |-------------------------------|-------------------|----------------------------------------------------------------|
@@ -211,7 +209,7 @@ Plug in your own inputs—prices, hours, discount rate—and let the data guide 
 4. **Operational Simplicity**: No hardware procurement, maintenance, or staff overhead.
 
 
-## References
+# References
 - [Dell PowerEdge T150 Server (PC Kuwait)](https://pckuwait.com/product/dell-t150-poweredge-tower-server-xeon-e-2314-16gb-ram-2tb-hdd/)
 - [LightWave 3 KVA Online UPS (PC Kuwait)](https://pckuwait.com/product/lightwave-3kva-online-ups/)
 - [Samsung 2 TB 9100 Pro NVMe SSD (PC Kuwait)](https://pckuwait.com/product/samsung-2tb-9100-pro-heatsink-nvme-m-2-ssd-pcie-5-0-x4-14700mb-s/)
