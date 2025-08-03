@@ -119,7 +119,7 @@ Note: You might argue that the server specs don't exactly match the one picked f
 
 ## Cloud Over Five Years
 
-With 1000 KWD per year (actually it is 840, I just pushed it to 1000 KWD to account for discrepancies in specs and to include my opportunity cost of managing the infrastructure and assuming a modest 5% annual price rise, all again discounted each year at 4%.
+With 1000 KWD per year (actually as mentioned previously, it is 840, I just pushed it to 1000 KWD to account for discrepancies) and assuming a modest 5% annual price rise, all again discounted each year at 4%.
 
 ### Present Value Calculation for Growing Cash Flows (4% Discount Rate, 5% Growth)
 
