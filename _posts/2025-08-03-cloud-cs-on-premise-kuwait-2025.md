@@ -49,6 +49,7 @@ Running on-premises means I’m responsible for:
 - Physical security: locked cabinet, CCTV, access logs
 - Network security: firewalls, intrusion detection
 - Data protection: encrypted disks, off-site backups
+
 A rough estimate would be 150 KWD/year for tools and backup storage.
 
 ## The hidden cost of going local, my time valued at opportunity cost
