@@ -5,7 +5,7 @@ categories: software saas startup tech industry business
 author: Anas Najaa
 ---
 
-![saas tech startup]({{site.cdn_url}}/blog/2024/09/bbe7e1f8-e3d7-4969-942d-3cbf83a07206.jpeg)
+![SaaS and Tech Startups](/assets/images/2024-09-saas-tech-startups-cover.png)
 
 # Intro
 

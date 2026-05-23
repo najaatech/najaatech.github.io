@@ -5,7 +5,7 @@ categories: technology development dotnet core
 author: Anas Najaa
 ---
 
-![Optimizing assets in .NET Core WebApp]({{site.cdn_url}}/blog/2024/08/916265dc-958d-4671-a433-11e55a5ad377.png)
+![Optimizing assets in .NET Core WebApp](/assets/images/2024-08-optimizing-assets-dotnet-core-cover.png)
 
 When serving website's static assets, it is alway recommended to reduce the number and the size of requests made on each page. In .NET Core, there are two useful libraries that work very well in Web App projects. In this article, we are going to describe how to use Build Minifier to reduce the number and size of our static assets. In addition, we will use Web Compiler to streamline the process of writing and minifying our CSS files using SCSS.
 

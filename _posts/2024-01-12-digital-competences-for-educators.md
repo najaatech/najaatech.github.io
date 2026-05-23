@@ -5,7 +5,7 @@ categories: digital competence education technology research
 author: Anas Najaa
 ---
 
-![Digital Competences for Educators]({{site.cdn_url}}/blog/2024/08/de84af78-8697-4602-ba4f-b415661b7e7b.png)
+![Digital Competences for Educators](/assets/images/2024-08-digital-competences-educators-cover.png)
 
 # Introduction
 

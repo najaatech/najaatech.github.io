@@ -5,6 +5,8 @@ categories: fintech payments kuwait regulation cbk ecommerce
 author: Anas Najaa
 ---
 
+![Kuwait's New E-Money Crackdown: CBK Limited-Scope E-Money and MyFatoorah](/assets/images/2026-04-cbk-limited-scope-emoney-myfatoorah-kuwait-cover.png)
+
 # What Happened?
 
 On April 16, 2026, the [Central Bank of Kuwait (CBK)](https://www.cbk.gov.kw/en) issued a circular tightening the rules around **limited-scope electronic money services** (_خدمات النقود الإلكترونية ذات النطاق المحدود_). The core requirement is straightforward but consequential: **no entity may operate such a service without first obtaining a no-objection certificate (NOC) from the CBK**.

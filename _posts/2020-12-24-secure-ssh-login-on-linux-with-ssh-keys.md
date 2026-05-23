@@ -5,7 +5,7 @@ categories: technology development ssh
 author: Anas Najaa
 ---
 
-![Secure SSH Login on Linux with SSH keys]({{site.cdn_url}}/blog/2024/08/0cf907e6-ea42-4b2b-8c5e-9e127f32e709.png)
+![Secure SSH Login on Linux with SSH keys](/assets/images/2024-08-secure-ssh-login-linux-cover.png)
 
 This is a brief summary of the steps required to create a secure SSH login using public-private keys on Linux server.
 A reference to the full guide can be found here:

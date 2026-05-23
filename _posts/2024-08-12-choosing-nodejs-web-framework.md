@@ -5,7 +5,7 @@ categories: nodejs express nest fastify webframework
 author: Anas Najaa
 ---
 
-![Choosing Node.js Web Framework]({{site.cdn_url}}/blog/2024/08/0adf9d7c-8416-4742-a57e-c3b1c038689e.png)
+![Choosing Node.js Web Framework](/assets/images/2024-08-choosing-nodejs-framework-cover.png)
 
 # Frame of reference
 
@@ -28,7 +28,7 @@ I focused on 3 frameworks that I've used personally. Each framework provides a d
 
 **Note:** Please remember that as you mature and grow as a web developer, your understanding of the inner workings of Node.js, web servers, web protocols, networks and the web in general will grow. This will have an impact on your framework choice and you might develop a taste for a different framework, which is ok. Just keep in mind that it is a balancing act and in the end, they are just _tools_.
 
-![Express.js]({{site.cdn_url}}/blog/2024/08/17f5303e-8fac-4db3-8726-1ad4d9fe740f.png)
+![Express.js](/assets/images/2024-08-expressjs-logo.png)
 
 ## **[Express.js](https://github.com/expressjs/express) (64k stars)**
 
@@ -61,7 +61,7 @@ app.listen(3000, () => {
 ```
 
 
-![Fastify]({{site.cdn_url}}/blog/2024/08/4c074df3-c352-40de-bf83-0a02757414d1.png)
+![Fastify](/assets/images/2024-08-fastify-logo.png)
 
 ## **[Fastify](https://github.com/fastify/fastify) (31k stars)**
 The underdog of the Node.js web frameworks. Fastify is considered one of the [fastest](https://fastify.dev/benchmarks/) Node.js frameworks out there. It provides a good middle ground between flexibility, simplicity and good developer experience. 
@@ -92,7 +92,7 @@ fastify.listen(3000, (err) => {
 });
 ```
 
-![Nest.js]({{site.cdn_url}}/blog/2024/08/37c914e7-5321-406c-b403-1da163c01e4c.png)
+![Nest.js](/assets/images/2024-08-nestjs-logo.png)
 
 ## **[Nest.js](https://github.com/nestjs/nest) (66k stars)**
 I like to describe Nest.js as the .NET framework of Node. Nest.js leverages TypeScript and OOP principles and has a modular architecture with strong support for dependency injection, which an amazing feature for large codebase. Nest.js is also Object-Oriented and relies on MVC design pattern which works very well for large teams.

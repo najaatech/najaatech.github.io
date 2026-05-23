@@ -5,7 +5,7 @@ categories: technology development
 author: Anas Najaa
 ---
 
-![Web Frameworks - A Learning Journey]({{site.cdn_url}}/blog/2024/08/c1f071d7-88f2-4a2e-912d-6ac82233847b.png)
+![Web Frameworks - A Learning Journey](/assets/images/2024-08-web-frameworks-learning-journey-cover.png)
 
 If you are new to programming and interested in web development, you'll most likely stumble upon the term framework. As you start delving into the frontend or backend development paths, you'll be tempted to try out one or more of those web frameworks that promise to simplify your development flow and increase your productivity. As tempting as it might be, you should probably skip them in the beginning. In this post, I'll discuss when should you start considering using frameworks and what to keep in mind when picking one.
 
@@ -59,8 +59,8 @@ At this point you're probably wondering, which of the hundreds of frameworks out
 
 One of the effective tools that might guide you through your learning journey overall are roadmaps. Here are two roadmaps for frontend/backend development that will help you understand when is the most suitable time to pick up and invest in learning frameworks: (These are simplified roadmaps of the originals found [here](https://roadmap.sh/frontend) and [here](https://roadmap.sh/backend))
 
-![Backend Development Roadmap](https://najaa-files.s3.me-south-1.amazonaws.com/blog/2024/08/471a1f2a-7903-4f4a-8868-f6da802dfae5.png)
-![Frontend Development Roadmap](https://najaa-files.s3.me-south-1.amazonaws.com/blog/2024/08/f2088ab1-8b3a-4b6e-b0e0-aaf4e2c6e832.png)
+![Backend Development Roadmap](/assets/images/2024-08-backend-development-roadmap.png)
+![Frontend Development Roadmap](/assets/images/2024-08-frontend-development-roadmap.png)
 
 # It's a learning journey
 
