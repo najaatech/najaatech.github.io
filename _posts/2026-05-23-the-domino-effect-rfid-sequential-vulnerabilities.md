@@ -24,11 +24,12 @@ To understand the vulnerability, we first need to look at how the BioFace D1 han
 When a student or faculty member taps their card, the badge simply powers up via the reader's magnetic field and broadcasts its unique identifier (UID) in plain text. What the Proxmark3 or Flipper Zero captures is a raw 5-byte hexadecimal string, for example:
 
 ```
-8E 00 00 27 10
-8E 00 00 27 11
+8E 00 00 27 10   (card 10000)
+8E 00 00 27 11   (card 10001)
+8E 00 00 38 A4   (card 14500)
 ```
 
-The reader decodes the card's identifier and outputs it over the Wiegand interface to the access control panel. In the examples above, both cards share the same Facility Code (`8E` = 142 in decimal) and differ only in their last byte. That one-byte increment is all it takes to move from one user's identity to the next.
+The reader decodes the card's identifier and outputs it over the Wiegand interface to the access control panel. In the examples above, all cards share the same Facility Code (`8E` = 142 in decimal), while the remaining bytes encode a sequential card number. Thousands of students and staff are mapped across this range, incrementing one by one from the first card ever issued.
 
 ---
 
