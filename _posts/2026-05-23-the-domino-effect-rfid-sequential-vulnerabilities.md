@@ -13,7 +13,7 @@ True security is holistic. While a great deal of time goes into securing servers
 
 During a recent physical penetration test of a client's campus, the objective was to evaluate the resilience of their physical access control systems (PACS). The campus was secured using [ZKTeco BioFace D1](https://www.zkteco.me/product-details/bioface-d1) terminals, multi-biometric readers supporting face, fingerprint, RFID card, and password authentication.
 
-During the assessment, using standard hardware research tools like the [Flipper Zero](https://flipperzero.one/) (running [Momentum firmware](https://github.com/Next-Flip/Momentum-Firmware)) and [Proxmark3](https://proxmark.com/), we uncovered two compounding vulnerabilities: the access control system relied entirely on the card ID as a single factor, with no PIN, biometric, or any secondary verification and on top of that, the RFID badge numbers were completely sequential. Either problem alone is serious. Together, they made the system trivially exploitable.
+During the assessment, using standard hardware research tools like the [Flipper Zero](https://flipperzero.one/) (running [Momentum firmware](https://github.com/Next-Flip/Momentum-Firmware)) and [Proxmark3](https://github.com/RfidResearchGroup/proxmark3), we uncovered two compounding vulnerabilities: the access control system relied entirely on the card ID as a single factor, with no PIN, biometric, or any secondary verification and on top of that, the RFID badge numbers were completely sequential. Either problem alone is serious. Together, they made the system trivially exploitable.
 
 ---
 
@@ -119,4 +119,4 @@ The same principles that protect web applications and cloud deployments must be 
 
 ---
 
-*References: [Flipper Zero](https://flipperzero.one/); [Momentum Firmware](https://github.com/Next-Flip/Momentum-Firmware); [Proxmark3](https://proxmark.com/); [ZKTeco BioFace D1](https://www.zkteco.me/product-details/bioface-d1); [MIFARE DESFire EV3 — NXP](https://www.nxp.com/products/rfid-nfc/mifare-hf/mifare-desfire:MC_53450); [HID iCLASS SEOS](https://www.hidglobal.com/products/cards-and-credentials/iclass-seos); [26-bit Wiegand format — Wikipedia](https://en.wikipedia.org/wiki/Wiegand_interface)*
+*References: [Flipper Zero](https://flipperzero.one/); [Momentum Firmware](https://github.com/Next-Flip/Momentum-Firmware); [Proxmark3](https://github.com/RfidResearchGroup/proxmark3); [ZKTeco BioFace D1](https://www.zkteco.me/product-details/bioface-d1); [MIFARE DESFire EV3 — NXP](https://www.nxp.com/products/rfid-nfc/mifare-hf/mifare-desfire:MC_53450); [HID iCLASS SEOS](https://www.hidglobal.com/products/cards-and-credentials/iclass-seos); [26-bit Wiegand format — Wikipedia](https://en.wikipedia.org/wiki/Wiegand_interface)*
