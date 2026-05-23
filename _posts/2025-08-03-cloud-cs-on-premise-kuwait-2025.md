@@ -5,7 +5,7 @@ categories: cloud saas startup tech industry business hosting kuwait cost strate
 author: Anas Najaa
 ---
 
-![Cloud vs On-Premise Kuwait 2025](/assets/images/2025-08-cloud-vs-on-premise-kuwait-cover.jpg)
+![Cloud vs On-Premise Kuwait 2025](/assets/images/2025-08-cloud-vs-on-premise-kuwait-cover.png)
 
 # Intro
 
