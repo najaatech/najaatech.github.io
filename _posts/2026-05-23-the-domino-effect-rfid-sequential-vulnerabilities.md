@@ -21,6 +21,8 @@ During the assessment, using standard hardware research tools like the [Flipper 
 
 To understand the vulnerability, we first need to look at how the BioFace D1 handles RFID authentication. Like most access control terminals in the region, the client had it configured to accept legacy 125 kHz proximity cards via the Wiegand interface, the path of least resistance during a campus-wide rollout. These cards, such as standard EM4100 or legacy HID proxies, communicate with no cryptographic handshake.
 
+![EM4100 125kHz proximity card](/assets/images/2026-05-em4100-card.png)
+
 When a student or faculty member taps their card, the badge simply powers up via the reader's magnetic field and broadcasts its unique identifier (UID) in plain text. What the Proxmark3 or Flipper Zero captures is a raw 5-byte hexadecimal string, for example:
 
 ```
@@ -94,23 +96,27 @@ The second layer is the absence of cryptography. Legacy 125 kHz RFID technology 
 
 # Remediation: securing the perimeter
 
-If you manage physical access control for your organization, these are the steps worth prioritizing:
+Universities and educational institutions are particularly exposed here: large card populations issued in bulk, high staff turnover between academic years, and a culture of open access that makes physical security feel at odds with the academic environment. These recommendations are prioritized for that context.
 
 **1. Upgrade the hardware stack**
 
-Transition away from unencrypted 125 kHz proximity cards. Implement high-frequency (13.56 MHz) smart cards that support modern cryptography, such as [MIFARE DESFire EV3](https://www.nxp.com/products/rfid-nfc/mifare-hf/mifare-desfire:MC_53450) or [HID iCLASS SEOS](https://www.hidglobal.com/products/cards-and-credentials/iclass-seos). These cards require cryptographic challenge-response authentication before revealing any actionable data.
+Transition away from unencrypted 125 kHz proximity cards. Implement high-frequency (13.56 MHz) smart cards that support modern cryptography, such as [MIFARE DESFire EV3](https://www.nxp.com/products/rfid-nfc/mifare-hf/mifare-desfire:MC_53450) or [HID iCLASS SEOS](https://www.hidglobal.com/products/cards-and-credentials/iclass-seos). These cards require cryptographic challenge-response authentication before revealing any actionable data. Many institutions are already issuing student ID cards with NFC chips for library and payment systems, consolidating access control onto the same card is a natural next step.
 
 **2. Randomize UIDs in the database**
 
-If an immediate hardware upgrade isn't feasible and you are stuck with legacy Wiegand systems, never assign card numbers sequentially. Map random, non-contiguous badge IDs to user accounts in the backend access control database.
+If an immediate hardware upgrade isn't feasible and you are stuck with legacy Wiegand systems, never assign card numbers sequentially. The temptation to issue cards in order especially for large student intake cohorts and it is understandable, but it maps your entire organizational structure into the card numbering scheme. Use random, non-contiguous badge IDs in the access control database instead.
 
-**3. Implement anomaly detection**
+**3. Segment access by role**
 
-Access control software should act like a web firewall. If a single door reader registers dozens of "Access Denied" events from sequential badge numbers within a few minutes, an alert must be triggered and security personnel dispatched.
+A student card should open lecture halls, labs, and common areas, nothing else. Staff cards should be scoped to their department. IT and facilities should have access to the infrastructure they manage, not a universal pass. Server rooms, data centers, and administrative offices holding personal records should be on a completely separate access tier, ideally at a different physical security level (separate readers, separate Facility Code, or separate system entirely).
 
-**4. Enforce multi-factor authentication (MFA)**
+**4. Implement anomaly detection**
 
-For server rooms, financial offices, or executive suites, a badge tap should not be enough. Require a badge plus a PIN code or biometric verification.
+Access control software should flag unusual patterns the same way a web firewall flags repeated failed login attempts. Dozens of sequential "Access Denied" events at the same reader within minutes is not normal card tap behavior, it is an enumeration attempt. Configure your system to alert security staff when this pattern appears.
+
+**5. Enforce multi-factor authentication for sensitive areas**
+
+For server rooms, exam storage, financial offices, or any space holding sensitive student or institutional data, a badge tap alone is not sufficient. Require a badge plus a PIN or biometric verification. The BioFace D1 already supports this multifactor mode, it is a configuration decision not a hardware cost.
 
 ---
 
