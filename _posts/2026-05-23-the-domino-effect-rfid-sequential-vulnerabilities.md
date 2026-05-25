@@ -60,7 +60,7 @@ Because the client's legacy system lacked rate-limiting or physical intrusion de
 
 ## 2. Privilege escalation via hierarchy mapping
 
-Sequential numbering often mirrors organizational timelines. In this client's case, card numbers `10000` to `14000` belonged to the student body, while the earliest batch (`00001` to `00500`) had been assigned to faculty, maintenance staff, and IT administrators.
+Sequential numbering mirrors organizational timelines. The earliest cards issued are almost always held by senior staff, system administrators, and facilities personnel, the people with the broadest access rights. An attacker who understands this simply targets the low end of the numeric range.
 
 ---
 
